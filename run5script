@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Compile file_parser.c, options_processing.c and 5ps.c
+gcc -g -c file_parser.c -o file_parser
+gcc -g -c options_processing.c -o options_processing
+gcc -g -c 5ps.c -o 5p
+
+gcc file_parser options_processing 5p -o 5ps
+
+#run commands ./5ps <commands>
